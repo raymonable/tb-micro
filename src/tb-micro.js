@@ -212,6 +212,9 @@ var Trollbox = new class {
         function CloseWindow() {
             Window.remove();
         }
+        Window.querySelector('.tb-window-btn').addEventListener('click', () => {
+            CloseWindow();
+        })
         Window.classList = "tb-window";
         if (!!document.querySelector('.tb-invisible')) {
             Window.classList.add('tb-invisible')
