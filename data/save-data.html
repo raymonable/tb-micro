@@ -14,7 +14,7 @@
             e.source.postMessage(JSON.stringify({
               use: 'nickname',
               nick: localStorage['nick'] || null
-            }, e.origin);
+            }, e.origin));
             break;
           case "set-nick":
             localStorage['nick'] = data.nick;
