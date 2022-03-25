@@ -1,2 +1,5 @@
-# tb-micro
-A tiny Trollbox client based around the idea of having it as a little bookmark that you can open! :)
+# Trollbox Micro
+
+A little, tiny plugin that you can add to your bookmarks bar that lets you enjoy Trollbox by a single button click!
+
+Please note that there is no tutorial to use this; you'll have to figure that out on your own.
