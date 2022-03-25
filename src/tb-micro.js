@@ -126,7 +126,7 @@ var Trollbox = new class {
             path: '/api/v0/si'
         });
         var socket = this.#Socket
-        socket.on('message', (d) => {
+        socket.on('message',  (d) => {
             if (!fm) {
                 primary[0].querySelector('.tb-chat').innerHTML = '';
             }
@@ -212,9 +212,7 @@ var Trollbox = new class {
         function CloseWindow() {
             Window.remove();
         }
-        Window.querySelector('.tb-window-btn').addEventListener('click', () => {
-            CloseWindow();
-        })
+        Window.querySelector('.tb-window-btn').addEventListener('click', CloseWindow);
         Window.classList = "tb-window";
         if (!!document.querySelector('.tb-invisible')) {
             Window.classList.add('tb-invisible')
