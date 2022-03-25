@@ -121,13 +121,12 @@ var Trollbox = new class {
         <input class="tb-input" placeholder="Chat"><button class="tb-input-btn">Send</button>
         `);
         var primary = this.#Primary;
-        primary[0].querySelector('.tb-window-btn').addEventListener('click', primary[1]);
         var fm = false;
         this.#Socket = io('https://trollbox.party', {
             path: '/api/v0/si'
         });
         var socket = this.#Socket
-        socket.on('message',  (d) => {
+        socket.on('message', (d) => {
             if (!fm) {
                 primary[0].querySelector('.tb-chat').innerHTML = '';
             }
@@ -223,7 +222,7 @@ var Trollbox = new class {
             x: 0,
             y: 0
         };
-        var WindowBoundingBoxes = Window.getBoundingClientRect();
+        var WindowBoundingBoxes = Window.getBoundingClientRect();;
         var WindowBeingHeld = false;
         Window.addEventListener('mousedown', (e) => {
             WindowBeingHeld = true;
