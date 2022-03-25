@@ -121,7 +121,7 @@ var Trollbox = new class {
         <input class="tb-input" placeholder="Chat"><button class="tb-input-btn">Send</button>
         `);
         var primary = this.#Primary;
-        primary[1].querySelector('.tb-window-btn').addEventListener('click', CloseWindow);
+        primary[0].querySelector('.tb-window-btn').addEventListener('click', primary[1]);
         var fm = false;
         this.#Socket = io('https://trollbox.party', {
             path: '/api/v0/si'
